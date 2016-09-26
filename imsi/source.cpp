@@ -110,7 +110,7 @@ void drawThick(const int& i0, const int& j0, const int& i1, const int& j1, const
 		}
 	}
 }
- 
+
 void drawRect(const int& i0, const int& j0, const int& i1, const int& j1, const float& red, const float& green, const float& blue)
 {
 	int i, j;
@@ -185,17 +185,17 @@ void drawOnPixelBuffer(GLFWwindow* window)
 	//std::memset(pixels, 1.0f, sizeof(float)*width*height * 3); // doesn't work
 	std::fill_n(pixels, width*height * 3, 1.0f);	// white background
 
-	//const int i = rand() % width, j = rand() % height;
-	//drawPixel(i, j, 0.0f, 0.0f, 0.0f);
+													//const int i = rand() % width, j = rand() % height;
+													//drawPixel(i, j, 0.0f, 0.0f, 0.0f);
 
-	// drawing a line
-	//TODO: anti-aliasing
-	//for (int i = 0; i < width*height; i++)
-	//{
-	//	pixels[i * 3 + 0] = 1.0f; // red 
-	//	pixels[i * 3 + 1] = 1.0f; // green
-	//	pixels[i * 3 + 2] = 1.0f; // blue
-	//}
+													// drawing a line
+													//TODO: anti-aliasing
+													//for (int i = 0; i < width*height; i++)
+													//{
+													//	pixels[i * 3 + 0] = 1.0f; // red 
+													//	pixels[i * 3 + 1] = 1.0f; // green
+													//	pixels[i * 3 + 2] = 1.0f; // blue
+													//}
 	drawIcon(100, 150, 70, 3, 1, 0, 0, 0, 0, 1, window);
 	drawLine(70, 150, 130, 150, 0, 0, 0);
 	drawLine(110, 130, 130, 150, 0, 0, 0);
